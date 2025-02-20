@@ -130,16 +130,16 @@ def menu():
     tank.create_map()
     while True:
         print("\nMenu:")
-        print("Key 1 : Tank moves forward")
-        print("Key 2 : Tank moves backward")
-        print("Key 3 : Tank moves left")
-        print("Key 4 : Tank moves right")
-        print("Key 5 : Tank will turn left")
-        print("Key 6 : Tank will turn right")
+        print("Key w : Tank moves forward")
+        print("Key s : Tank moves backward")
+        print("Key a : Tank moves left")
+        print("Key d : Tank moves right")
+        print("Key q : Tank will turn left")
+        print("Key e : Tank will turn right")
         print("Key 0 : Tank will shoot")
         print("Key 8 : Information")
         print("Key 9 : Exit the game")
-        user_choice = input("Choose 1 option from above: ")
+        user_choice = input("Choose 1 option from above: ").lower()
 
         if user_choice == "w":
             tank.move_forward()
